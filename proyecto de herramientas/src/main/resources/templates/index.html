@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" th:href="@{'http://' + ${ip} + '/'}">IES N°6</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/'}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/programas'}">Programas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/isos'}">ISOs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/acerca'}">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/DISC1.png" class="card-img-top" alt="Imagen de Ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">TODO PARA EL DIA DEL MAESTRO</h5>
+                        <p class="card-text">Este documento integral facilita la planificación de una celebración memorable del Día del Maestro, asegurando que los maestros se sientan valorados y apreciados.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/100+.iso'}" class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/por defecto.png" class="card-img-top" alt="Imagen de Ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">CUENTOS</h5>
+                        <p class="card-text">Cuentos interactivos para niños.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/CUENTOS.iso'}" class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/por defecto.png" class="card-img-top" alt="Imagen de Ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">La Granja-Marisa</h5>
+                        <p class="card-text">Descubre la granja y todo el mundo del campo y sus animales.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/De La Granja-Marisa.iso'}" class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/por defecto.png" class="card-img-top" alt="Imagen de Ejemplo">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligencia Emocional</h5>
+                        <p class="card-text">Transforma tu vida personal y profesional dominando tus emociones con nuestro CD de Inteligencia Emocional.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/for Inteligencia Emocional-Vanesa.iso'}" class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

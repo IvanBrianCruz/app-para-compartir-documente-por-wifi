@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+     <!-- Menú de Navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" th:href="@{'http://' + ${ip} + '/'}">IES N°6</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/'}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/programas'}">Programas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/isos'}">ISOs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{'http://' + ${ip} + '/acerca'}">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+        <div class="row">
+
+            <!-- Card 5 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/audacity.png" class="card-img-top" alt="Audacity">
+                    <div class="card-body">
+                        <h5 class="card-title">Audacity</h5>
+                        <p class="card-text">Software libre para grabación y edición de audio.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/Audacity.exe'}"
+                            class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/klavaro.png" class="card-img-top" alt="Klavaro">
+                    <div class="card-body">
+                        <h5 class="card-title">Klavaro</h5>
+                        <p class="card-text">Aplicación para aprender mecanografía de forma eficaz.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/Klavaro.exe'}"
+                            class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/libreoffice.png" class="card-img-top" alt="LibreOffice">
+                    <div class="card-body">
+                        <h5 class="card-title">LibreOffice</h5>
+                        <p class="card-text">Suite ofimática libre y de código abierto.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/LibreOffice.msi'}"
+                            class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/mecanet.png" class="card-img-top" alt="MecaNet">
+                    <div class="card-body">
+                        <h5 class="card-title">MecaNet</h5>
+                        <p class="card-text">Programa para aprender mecanografía con lecciones prácticas.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/MecaNet.exe'}"
+                            class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="/img/virtualbox.png" class="card-img-top" alt="VirtualBox">
+                    <div class="card-body">
+                        <h5 class="card-title">VirtualBox</h5>
+                        <p class="card-text">Software de virtualización para ejecutar sistemas operativos invitados.</p>
+                        <a th:href="@{'http://' + ${ip} + '/download/VirtualBox.exe'}"
+                            class="btn btn-primary">DESCARGAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    </main>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
